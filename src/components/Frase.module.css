@@ -1,0 +1,13 @@
+/* 
+nunca colocar ex: frase-container
+*/
+.faseContainer{
+background-color: #dd0f9f;
+border: 1px solid #111;
+}
+
+.fraseContent{
+    color:rgb(23, 196, 8);
+    background-color: #111;
+    margin: 0;
+}
