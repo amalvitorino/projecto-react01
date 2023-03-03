@@ -3,8 +3,9 @@ import { useState } from "react"
 function Form() {
     function cadastarUsuario(e) {
         e.preventDefault() //parar a execucao do formulario para nao enviar as informacoes ao servidor e imprimir o que estara aqui
-        console.log(name,': senha =>',password)
+        
         console.log("Cadastrou o usuario")
+        console.log(`Usuario ${name} foi cadastrado com a senha: ${password}`);
     }
 
     const [name, setName] = useState()
@@ -15,7 +16,7 @@ function Form() {
             <h1>Meu Cadastro</h1>
             <form onSubmit={cadastarUsuario}>
                 <div>
-                    <label htmlFor="name">Nome:</label> 
+                    <label htmlFor="name">Nome:</label>
                     <input type="text"
                         id="name" name="name"
                         placeholder="Digite seu nome"
