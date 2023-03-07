@@ -1,14 +1,16 @@
+import { useState } from 'react';
 import './App.css';
-import Condicional from './components/Condiconal';
-import Evento from './components/Evento';
-import Form from './components/Form';
+import Saudacao from './Saudacao';
+import SeuNome from './SeuNome';
+
 function App() {
-const url = 'https://via.placeholder.com/150'
-const nome = 'amal';
+
+const [nome, setNome] =useState()
   return (
     <div className='App'>
-      <h1>Renderizacao condicional</h1>
-      <Condicional/>
+      <h1>state lift</h1>
+      <SeuNome setNome= {setNome}/>
+      <Saudacao nome = {nome}/>
     </div>
   );
 }
